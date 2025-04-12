@@ -10,6 +10,38 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  align-self: center;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  flex: 1;
+}
+
+.article-container {
+  display:flex;
+  flex-direction: horizontal;
+  gap: 52px;
+}
+
+.article-container .text {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.info img {
+  /*align-self: center;*/
 }
 
 /* do not edit this footer */

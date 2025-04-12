@@ -33,6 +33,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* My changes */
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +50,8 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  /* My changes */
+  flex-shrink: 0;
 }
 
 button {
@@ -60,10 +64,32 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  /* my changes */
+  /*flex: 0; */
 }
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+  /* my changes */
+  /*flex: 0;*/
+}
+
+/* My changes */
+.container {
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  text-justify: center;
+}
+
+.child-container {
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.header {
+  font-weight: bold;
+  font-size: 1.2em;
 }
